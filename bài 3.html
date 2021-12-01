@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function SoNguyenAm(chuoi) {
+        let arr = ["a", "e", "i", "o", "u"];
+        let count = 0;
+        for (let i = 0; i < chuoi.length; i++) {
+            if (arr.indexOf(chuoi[i]) !== -1) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            return count;
+        } else {
+            return false;
+        }
+    }
+
+    let chuoi = prompt(" nhập  :");
+    SoNguyenAm(chuoi);
+    alert('Số kí tự nguyên âm ' + ' ' + SoNguyenAm(chuoi));
+</script>
+</body>
+</html>
